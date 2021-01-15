@@ -1,34 +1,41 @@
-const fill = document.querySelector('')
-const empties = document.querySelectorAll('')
+const fill = document.querySelector(".fill");
+const empties = document.querySelectorAll(".empty");
 
-fill.addEventListener('dragstart', )
-fill.addEventListener('dragend', )
+fill.addEventListener("dragstart", dragStart);
+fill.addEventListener("dragend", dragEnd);
 
-for(const empty of empties) {
 
+for (const empty of empties) {
+    empty.addEventListener("dragover", dragOver);
+    empty.addEventListener("dragenter", dragEnter);
+    empty.addEventListener("dragleave", dragLeave);
+    empty.addEventListener("drop", dragDrop);
 }
 
-function dragStart() {
 
-    setTimeout()
+function dragStart() {
+  this.classList.add("hold");
+  setTimeout(() => (this.className = "hide"), 0);
 }
 
 function dragEnd() {
-    this.
+  this.className = "fill";
 }
 
-function dragOver(e) {
-
+function dragOver(event) {
+  event.preventDefault();
 }
 
-function dragEnter(e) {
-
+function dragEnter(event) {
+  event.preventDefault();
+  this.classList.add("hovered");
 }
 
 function dragLeave() {
-
+  this.className = "empty";
 }
 
 function dragDrop() {
-
+  this.className = "empty";
+  this.append(fill);
 }
