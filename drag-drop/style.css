@@ -3,21 +3,47 @@
 }
 
 body {
+  background-color: #fef6e4;
+}
+
+.display {
+  display: flex;
+  justify-content: space-around;
 }
 
 .empty {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: #f582ae;
+}
+.empty .fill {
+  margin: 5px;
 }
 
 .fill {
-  width: 150px;
+  width: 110px;
+  height: 110px;
+  border-radius: 5px;
+
+  background-image: url("https://picsum.photos/100");
 }
 
 .hold {
-  border: ;
+  border: 2px solid #001858;
+  background-color: #fef6e4;
 }
 
 .hovered {
-  :dashed ;
+  background: #8bd3dd;
+}
+
+.hide {
+  display: none;
+}
+
+.leave {
+  background-color: gray;
 }
 
 @media (max-width: 800px) {
