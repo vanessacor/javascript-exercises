@@ -4,19 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Drag N Drop</title>
   </head>
   <body>
-    <section class="display">
-      <div class="empty">
-        <div class="fill" draggable="true"></div>
-      </div>
-      <div class="empty"></div>
-      <div class="empty"></div>
-      <div class="empty"></div>
-      <div class="empty"></div>
-    </section>
-
+    <header class="container" id="header">
+      <h1>Drag'N'Drop</h1>
+    </header>
+    <main class="container">
+      <section class="display">
+        <div class="empty">
+          <div class="fill" draggable="true"></div>
+        </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+      </section>
+    </main>
+    <footer class="container" id="footer">
+      <p>
+        Made with <span><ion-icon name="heart"></ion-icon></span> by
+        <a href="https://vanessapoppe.me/" target="blank">Vanessa</a>
+      </p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
